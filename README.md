@@ -424,3 +424,72 @@ class User extends Authenticatable implements MustVerifyEmail
 MAIL_MAILER=smtp
 MAIL_HOST=smtp.mailtrap.io
 MAIL_PORT=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+以下に、DBスキーマ構造を確認するためのいくつかの方法を示します：
+
+1. `db:show` コマンドの使用:
+
+このコマンドは、データベース全体の構造を表示します。
+
+```bash
+php artisan db:show
+```
+
+特定のテーブルの構造を確認したい場合：
+
+```bash
+php artisan db:show {table-name}
+```
+
+2. `schema:dump` コマンドの使用:
+
+このコマンドは、現在のデータベーススキーマのスナップショットを database/schema/mysql-schema.sql に作成します。
+
+```bash
+php artisan schema:dump
+```
+
+
+nhGYtaR6In-vgugP8htoC
+abqVholkkN-3LqJd9Rzj3
+BCkNl5CVu7-hBwjzQE8Pm
+QnFkbUPFas-tmZD2oxm17
+qLiXfBqbFO-t0AdzIIG3l
+xdHY3B66K2-59LFITtVTe
+eFGENIczOZ-TaZXqPKkMU
+3T5vvWsL5D-CIHTlgZoxJ
+
+
+Here is a simple flow chart:
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant C as Client
+    participant A as Authorization Server
+    participant R as Resource Server
+
+    U->>C: 1. ログイン要求
+    C->>A: 2. 認可コードリクエスト
+    A->>U: 3. 認可コード付きリダイレクト
+    U->>C: 4. 認可コードをクライアントへ
+    C->>A: 5. 認可コードとクライアント情報を送信
+    A->>C: 6. アクセストークンとリフレッシュトークンを発行
+    C->>R: 7. アクセストークンを使用してリソースへアクセス
+    R->>C: 8. 要求されたリソースを返す
+```
