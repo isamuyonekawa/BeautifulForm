@@ -465,14 +465,6 @@ php artisan schema:dump
 ```
 
 
-nhGYtaR6In-vgugP8htoC
-abqVholkkN-3LqJd9Rzj3
-BCkNl5CVu7-hBwjzQE8Pm
-QnFkbUPFas-tmZD2oxm17
-qLiXfBqbFO-t0AdzIIG3l
-xdHY3B66K2-59LFITtVTe
-eFGENIczOZ-TaZXqPKkMU
-3T5vvWsL5D-CIHTlgZoxJ
 
 
 Here is a simple flow chart:
